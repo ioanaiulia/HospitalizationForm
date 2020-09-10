@@ -1,0 +1,17 @@
+body {
+    background-image: url("../assets/backgr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    position: center;
+    background-color: lightblue;
+    border-style: double;
+    border-radius: 15%;
+    padding: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 25%;
+}

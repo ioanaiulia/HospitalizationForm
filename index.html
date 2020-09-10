@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"  href="style.css" >
+    <title> Fisa </title>
+<script src="script.js"> </script>
+</head>
+
+<body onload="setTodayDate()"> 
+
+    <h1 style="background-color: white;"> Unitatea de urgente a spitalului  judetean</h1>
+    <div class="flex flex-row flex-horizontal-center">
+         <div id="container">
+             <table>
+                 <tr>
+                     <th colspan="6" style="text-align: center; background-color: rgb(204, 217, 250);"> Fisa de internare </th>
+                 </tr>
+                 <tr>
+                     <th colspan="6" style="text-align: center;"> Date despre pacient: </th>
+                 </tr>
+
+                 <tr>
+                     <th style="width: 70px;"> Nume: </th>
+                     <td colspan="2">
+                        <form action="/action_page.php">
+                            <label for="fname"></label>
+                            <input class="input_text" type="text" id="fname" name="fname"  style="width: 200px;"><br><br>
+                        </form>
+                     </td>
+                     <th style="width: 70px;"> Prenume: </th>
+                     <td colspan="2">
+                        <from>
+                            <label for="lname"></label>
+                            <input class="input_text" type="text" id="lname" name="lname"><br><br>
+                        </form>
+                     </td>
+                 </tr>
+                 <tr>
+                     <th> CNP: </th>
+                     <td colspan="2">
+                        <form action="/action_page.php">
+                            <label for="personal_code"> </label>
+                            <input class="input_text" type="text" id="personal_code" name="personal_code"  style="width: 200px"><br><br>
+                        </form>
+                     </td>
+                     <th> Genul: </th>
+                     <td colspan="2">
+                        <form action="/action_page.php">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Masculin</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Feminin</label><br>
+                        </form>
+                     </td>
+                 </tr>
+                 <tr>
+                     <th> Data nasterii: </th>
+                     <td colspan="2">
+                        <form action="/action_page.php">
+                            <label for="b-day"></label>
+                            <input class="input_text" type="date" id="b-day" name="b-day">
+                        </form>
+                     </td>
+                     <th> Locul nasterii: </th>
+                     <td colspan="2">
+                        <from>
+                            <label for="brt-place"></label>
+                            <input class="input_text" type="text" id="brt-place" name="brt-place"><br><br>
+                        </form>
+                     </td>
+                 </tr>
+                 <tr>
+                    <th>Oras: </th>
+                    <td>
+                        <from>
+                            <label for="oras"></label>
+                            <input class="input_text" type="text" id="oras" name="oras"><br><br>
+                        </form>
+                    </td>
+                    <th style="width: 10px;"> Judet:</th>
+                    <td>
+                        <from>
+                            <label for="adress"></label>
+                            <input class="input_text" type="text" id="Judet" name="Judet" style="width: 70px;"><br><br>
+                        </form>
+                    </td>
+                    <th> Cod postal: </th>
+                    <td> 
+                        <from>
+                            <label for="cod_postal"></label>
+                            <input class="input_text" type="text" id="cod_postal" name="cod_postal" style="width: 100px;" ><br><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th> Email:</th>
+                    <td colspan="2"> 
+                        <from>
+                            <label for="Email"></label>
+                            <input class="input_text" type="text" id="Email" name="Email"  style="width: 200px;"><br><br>
+                        </form>
+                    </td>
+                    <th> Nr. de tel.:</th>
+                    <td colspan="2">
+                        <from>
+                            <label for="tel"></label>
+                            <input class="input_text" type="text" id="tel" name="tel"><br><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="6" style="text-align: center;  background-color: rgb(204, 217, 250);";> Medicamente prescrise:</th>
+                </tr>
+                <tr>
+                    <th> Nr. </th>
+                    <th> Cod </th>
+                    <th colspan="2"> Medicament </th>
+                    <th colspan="2"> Cantitate </th>
+                </tr>
+                <tr>
+                    <th> 1. </th>
+                    <td>
+                        <from>
+                            <label for="cod"></label>
+                            <input class="input_text" type="text" id="cod" name="cod"><br><br>
+                        </form>
+                    </td>
+                    <td colspan="2">
+                        <from>
+                            <label for="med"></label>
+                            <input class="input_text" type="text" id="med" name="med"><br><br>
+                        </form>
+                    </td>
+                    <td colspan="2">
+                        <from>
+                            <label for="cant"></label>
+                            <input class="input_text" type="text" id="cant" name="cant"><br><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 2. </th>
+                    <td>
+                        <from>
+                            <label for="cod"></label>
+                            <input class="input_text" type="text" id="cod" name="cod"><br><br>
+                        </form>
+                    </td>
+                    <td colspan="2">
+                        <from>
+                            <label for="med"></label>
+                            <input class="input_text" type="text" id="med" name="med"><br><br>
+                        </form>
+                    </td>
+                    <td colspan="2">
+                        <from>
+                            <label for="cant"></label>
+                            <input class="input_text" type="text" id="cant" name="cant"><br><br>
+                        </form>
+                    </td>
+                <tr>
+                    <th> 3. </th>
+                    <td>
+                        <from>
+                            <label for="cod"></label>
+                            <input class="input_text" type="text" id="cod" name="cod"><br><br>
+                        </form>
+                    </td>
+                    <td colspan="2">
+                        <from>
+                            <label for="med"></label>
+                            <input class="input_text" type="text" id="med" name="med"><br><br>
+                        </form>
+                    </td>
+                    <td colspan="2">
+                        <from>
+                            <label for="cant"></label>
+                            <input class="input_text" type="text" id="cant" name="cant"><br><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th> Simptome</th>
+                    <td colspan="5">
+                        <form action="/action_page.php">
+                            <label for="symptoms">Alege un simptom:</label>
+                            <select name="symptoms" id="symptoms">
+                              <option value="raceala">Raceala</option>
+                              <option value="gripa">Gripa</option>
+                              <option value="dureri_cap">Dureri de cap</option>
+                              <option value="nas">Nas infundat</option>
+                              <option value="dureri_gat">Durere in gat</option>
+                              <option value="febra">Febra</option>
+                            </select>
+                            <br><br>
+                          </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Observatii:</th>
+                    <td colspan="5">
+                        <from>
+                            <label for="obs"></label>
+                            <input class="input_text" type="" id="obs" name="observatii" style="height:150px; width: 500px; font-size:14pt;"><br><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th> Data de azi:</th>
+                    <td colspan="4">
+                        <form action="/action_page.php">
+                            <label for="curent-date"></label>
+                            <input class="input_text" type="date" id="today" name="calendar">
+                        </form>
+                    </td>
+                    <td>
+                        <input type="button" onclick="successfullRegistration()" value="Inregistreaza date">
+                    </td>
+                </tr>
+
+
+             </table>
+         </div>    
+    </div>
+
+</body>
+</html>
